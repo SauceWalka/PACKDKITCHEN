@@ -5,26 +5,18 @@ import "./home.css";
 import hbi from "./HBIndustry.png"
 import hbino from "./HBInnovation.png"
 import title from "./titlepic.png"
+import { SliderData } from "./SliderData";
 
 export default function Slider() {
-   const sliderImages = [ 
-      {
-        url: "https://flic.kr/p/2oeR8ZZ",
-      },
-      {
-        url: "",
-      }
-   ];
-
    const [activeImageNum, setCurrent] = useState(0);
-   const length = sliderImages.length;
+   const length = SliderData.length;
    const nextSlide = () => {
       setCurrent(activeImageNum === length - 1 ? 0 : activeImageNum + 1);
    };
    const prevSlide = () => {
       setCurrent(activeImageNum === 0 ? length - 1 : activeImageNum - 1);
    };
-   if (!Array.isArray(sliderImages) || sliderImages.length <= 0) {
+   if (!Array.isArray(SliderData) || SliderData.length <= 0) {
       return null;
    }
    return (
@@ -36,13 +28,13 @@ export default function Slider() {
             <div class="right"> 
                <FaArrowAltCircleRight onClick = {nextSlide} />
             </div>
-            {sliderImages.map((currentSlide, ind) => {
+            {SliderData.map((currentSlide, ind) => {
                return (
                   <div
                      className={ind === activeImageNum ? "currentSlide active" : "currentSlide"}
                      key={ind}
                   >
-                     {ind === activeImageNum && <img src={currentSlide.url} className="image" />}
+                     {ind === activeImageNum && <img src={currentSlide.image} className="image"/>}
                   </div>
                );
             })}

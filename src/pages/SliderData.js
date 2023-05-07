@@ -3,18 +3,18 @@ import ind from "./HBIndustry.png"
 
 export const SliderData = [
     {
-      Image: {hbi}
+      image: hbi
     },
     {
-      Image: {ind}
+      image: ind
     },
     {
-      Image: {hbi}
+      image: hbi
     },
     {
-      Image: {ind}
+      image: ind
     },
     {
-      Image: {ind}
+      image: ind
     }
   ];
