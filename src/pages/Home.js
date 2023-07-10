@@ -1,8 +1,12 @@
 import Slider from "./Slider"
 import background from "./Background.png"
-import bar from "./bar.png"
-import chef from "./chef.png"
-import prep from "./prep.png"
+import logo from "./EclecticTireCompanyLogo.png"
+import people from "./people.png"
+import ad from "./ad.jpg"
+import ecinsta from "./ecinsta.png"
+import ecfb from "./ecfb.png"
+import minsta from "./minsta.png"
+import mfb from "./mfb.png"
 import "./home.css"
 
 export default function Home() {
@@ -14,81 +18,72 @@ export default function Home() {
             <Slider/>
         </section>
     <section class="middle">
-        <section class="leftbox">
-            <section class="head">
-                <h1><b>Personal Chef<br></br>Service</b></h1>
-                <img src={chef} width="150" height="150" />
-            </section>
-            <p>We offer a variety of services that relate to helping those in need of a personal chef. If you click below we have times that are still avaliable to book David for you or your family. So its time to get booking so you get eating!!!</p>   
-            <button>Book Now</button>
-        </section>
         <section class="rightbox">
             <section class="head">
-                <h1><b>Meal Prep<br></br> Service</b></h1>
-                <img src={prep} width="150" height="150" />
+                <h1><b><i>Reach Out Or Check Us Out</i></b></h1>
             </section>
-            <p>As a private Chef a bulk of what I do is creating delicious health concious meal preps for anyone. So whether you are looking for something specific or want some suggestions click below to talk to me about what we can do!!!</p>
-            <button>Email Me</button>
+    <section class="infobox">
+            <section class="other">
+                <h3><i>Phone</i></h3>
+                <p>(443) xxx-xxxx</p>
+                <br></br>
+                <h3><i>Email</i></h3>
+                <button><i>Reach Out</i></button>
+            </section>
+            <section class="other">
+                <h3><i>Eclectic<br></br>HomePage</i></h3>
+                <button><i>ECM Home</i></button>
+                <br></br>
+                <h3><i>Licoln Parts<br></br>Website</i></h3>
+                <button><i>Get Parts</i></button>
+            </section>
+    </section>    
         </section>
     </section>
-    <section class="middle">
-        <section class="bottom">
-            <h1><b>Our Products (Ready to Order)</b></h1>
-            <section class="products">
-                <section class="item">
-                        <img src={bar} width="200" height="200" />
-                        <h3>Whey Based<br></br>Protein Bar</h3>
-                        <h2><b>$15.99</b> per 10</h2>
-                </section>
-                <section class="item">
-                        <img src={bar} width="200" height="200" />
-                        <h3>Whey Based<br></br>Protein Bar</h3>
-                        <h2><b>$15.99</b> per 10</h2>
-                </section>
-                <section class="item">
-                        <img src={bar} width="200" height="200" />
-                        <h3>Whey Based<br></br>Protein Bar</h3>
-                        <h2><b>$15.99</b> per 10</h2>
-                </section>
-                <section class="item">
-                        <img src={bar} width="200" height="200" />
-                        <h3>Whey Based<br></br>Protein Bar</h3>
-                        <h2><b>$15.99</b> per 10</h2>
-                </section>
-                <section class="item">
-                        <img src={bar} width="200" height="200" />
-                        <h3>Whey Based<br></br>Protein Bar</h3>
-                        <h2><b>$15.99</b> per 10</h2>
-                </section>
-            </section>
+    <section class="bottomad">
+            <img src={ad} width="2650" height="550" />
         </section>
-    </section>
         <section class="foot">
             <section class="eclectic">
-                <h1>PACKDKITCHEN LLC.</h1>
-                <h2>XXX-XXX-XXXX</h2>
-                <h2>Established. 2023</h2>
+                <img src={logo} width="300" height="150" />
+                <h1>443-xxx-xxxx</h1>
             </section>
             <section class="footdesc">
             <section class="center">
                 <h1><b>Contact</b></h1>
-                <h2><b>Scheduler</b> username</h2>
-                <h2><b>Email:</b> xxx@gmail.com</h2>
-            </section>
-            <section class="center">
-                <h1><b>Social</b></h1>
-                <h2><b>Facebook</b> username</h2>
-                <h2><b>Instagram</b> username</h2>
+                <h2><b>Reach Eclectic</b> xxx@gmail.com</h2>
+                <h2><b>Tire Issues</b> xxx@gmail.com</h2>
+                <h2><b>Web Issues</b> JohnLindemon@HBIndustry.co</h2>
+                <h2><b>Stripe Payment</b> JohnLindemon@HBIndustry.co</h2>
             </section>
             <section class="center">
                 <h1><b>Associates Links</b></h1>
-                <h2>Dani K <a href="danikgymandwellness.com">Dani K Gym</a></h2>
+                <h2>Owned by <a href="danikgymandwellness.com">Eclectic Motors</a></h2>
                 <h2>Site created by <a href="hbindustry.co">HBIndustry</a></h2>
+                <h2>Tires Supplied by <a href="hbindustry.co">Michelin Tires</a></h2>
+                <h2>Get Lincoln Part <a href="hbindustry.co">Buy Now</a></h2>
             </section>
             <section class="center">
-                <h1><b>Resources</b></h1>
-                <h2>Images Provided by PACKDKITCHEN</h2>
-                <h2>Graphics Created by <a href="hbindustry.co">HBIndustry</a></h2>   
+                <h1><b>Support Links</b></h1>
+                <h2>Frequently Asked Questions</h2>
+                <h2>Full Tire Catalog</h2>
+                <h2>Stripe Payment Issues</h2>
+                <h2>Issues With Shipping</h2>
+                <h2>Common Issues With Products</h2>
+            </section>
+            <section class="center">
+                <h1><b>Eclectic Social</b></h1>
+                <section class="upanddown">
+                <img src={ecinsta} width="50" height="50" />
+                <img src={ecfb} width="50" height="50" />
+                </section>   
+            </section>
+            <section class="center">
+                <h1><b>Michelin Social</b></h1>
+                <section class="upanddown">
+                <img src={minsta} width="50" height="50" />
+                <img src={mfb} width="50" height="50" />
+                </section>   
             </section>
         </section>
         </section>

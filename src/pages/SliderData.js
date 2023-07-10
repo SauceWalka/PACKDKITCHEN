@@ -1,20 +1,27 @@
-import hbi from "./HBInnovation.png"
-import ind from "./HBIndustry.png"
+import slidehead from "./slidehead.png"
+import slide1 from "./slideone.png"
+import slide2 from "./slidetwo.png"
+import slide3 from "./slidethree.png"
+import slide4 from "./slidefour.png"
+import slide5 from "./slidefive.png"
 
 export const SliderData = [
     {
-      Image: {hbi}
+      image: slidehead
     },
     {
-      Image: {ind}
+      image: slide3
     },
     {
-      Image: {hbi}
+      image: slide4
     },
     {
-      Image: {ind}
+      image: slide5
     },
     {
-      Image: {ind}
+      image: slide1
+    },
+    {
+      image: slide2
     }
   ];
